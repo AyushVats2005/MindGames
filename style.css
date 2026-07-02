@@ -1,0 +1,76 @@
+/* ............. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Vanta Background */
+#background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+/* All website content */
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.other-Links button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-left: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 140px;
+
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 15px 35px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+}
