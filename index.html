@@ -19,20 +19,16 @@
         <!-- Header Section -->
         <header id="header">
             <div class="app-Name">
-                <nav style="margin: 20px;font-size: 20px; font-weight: bold;">
+                <nav>
                     <h2>MindArena</h2>
                 </nav>
             </div>
             <div class="other-Links">
-                <button>
-                    <nav>
-                        <a href="" class="btn-header">Log In</a>
-                    </nav>
+                <button class="login-btn">
+                    Log In
                 </button>
-                <button>
-                    <nav>
-                        <a href="" class="btn-header">Sign Up</a>
-                    </nav>
+                <button class="signup-btn">
+                    Sign Up
                 </button>
             </div>
         </header>
@@ -41,32 +37,78 @@
             <h1>Master the Mind</h1>
             <p>Psychological strategy games.</p>
 
-            <button>Play</button>
+            <button class="login-btn">Play</button>
         </section>
-
-        
-
-
     </div>
+
+    <!-- Hidden Login Form -->
+
+
+    <div id="login-modal">
+        <div class="login-box">
+
+            <button id="close-btn">✕</button>
+            <br>
+            <h2>Login</h2>
+            <br>
+            <form action="login.php" method="post">
+
+                <label for="username">Username</label>
+                <input type="text" id="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+
+                <button type="submit">Login</button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Hidden Signup Form -->
+     <div id="signup-modal">
+        <div class="signup-box">
+            <button id="close-signup-btn">✕</button>
+            <h2>Sign Up</h2>
+
+            <form action="signup.php" method="post">
+
+                <label for="username">Username</label>
+                <input type="text" id="signup-username" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="signup-email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="signup-password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+
+        </div>
+     </div>
 
     <!-- JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
 
 
-        <script>
-            VANTA.FOG({
-                el: "#background",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.00,
-                minWidth: 200.00,
-                highlightColor: 0x241d06,
-                lowlightColor: 0x3a335b,
-                baseColor: 0x725c5c
-            })
-        </script>
+    <script>
+        VANTA.FOG({
+            el: "#background",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0x241d06,
+            lowlightColor: 0x3a335b,
+            baseColor: 0x725c5c
+        })
+    </script>
+
+    <script src="script.js"></script>
 </body>
 
 
